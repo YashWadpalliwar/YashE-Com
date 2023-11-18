@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
 
+/* Apply all pages */
 * {
     padding: 0%;
     margin: 0%;
@@ -74,6 +75,8 @@ p {
     margin: 40px 0;
 }
 
+/* website Scrollbar */
+
 ::-webkit-scrollbar {
     width: .700rem;
 }
@@ -95,6 +98,7 @@ p {
     }
 }
 
+/* Header and Navber */
 
 header {
     z-index: 999;
@@ -161,6 +165,7 @@ header {
 
 }
 
+/* heros section */
 
 #heros {
     background-image: url(./E-com-img/hero4.png);
@@ -200,6 +205,8 @@ header {
     transition: 0.3s ease;
 
 }
+
+/* feacher section */
 
 .feacher {
     padding: 40px 10px;
@@ -321,6 +328,8 @@ header {
 
 }
 
+/* banner section */
+
 .banner h4,
 .banner h2 {
     color: #fff;
@@ -356,6 +365,8 @@ header {
     color: white;
     background-color: #088178;
 }
+
+/* feacher 2 */
 
 .fea2 {
     padding-top: 3rem;
@@ -397,6 +408,8 @@ header {
     gap: 17px;
     border-radius: 20px;
 }
+
+/* banner 2 */
 
 .banner2 .ban2 h1 {
     font-size: 45px;
@@ -454,6 +467,8 @@ header {
     border: solid 1px black;
 }
 
+/* box */
+
 .box {
     display: flex;
     justify-content: space-between;
@@ -500,6 +515,8 @@ header {
     border-radius: 20px;
 }
 
+/* Newsletters section */
+
 #Newsletters .form {
     display: flex;
     width: 40%;
@@ -542,6 +559,8 @@ header {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
+
+/* footer */
 
 .footer_wrapper {
     padding: 0;
@@ -629,6 +648,7 @@ header {
     display: none;
 }
 
+
 /* Shop page */
 .shopbanner .shopban {
     display: flex;
@@ -649,6 +669,235 @@ header {
 .shopbanner .shopban h2 {
     color: #fff;
 
+}
+
+.shopoffer {
+    padding-top: 8.75rem;
+}
+
+.shopoffer .offer-box .offer-image::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -100%;
+    z-index: 2;
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 0)0%, rgba(255, 255, 255, 0.3)100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0)0%, rgba(255, 255, 255, 0.3)100%);
+    transform: skew(-25deg);
+}
+
+.shopoffer .offer-box .offer-image img {
+    transform: scale(1.02);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.shopoffer .offer-box:hover .offer-image::before {
+    animation: effect_shine 1s;
+}
+
+@keyframes effect_shine {
+    100% {
+        left: 150%;
+    }
+}
+
+.shopoffer .offer-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.shopoffer .offer-box .offer-info {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    transition: all 250ms ease-out;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopoffer .offer-box .offer-info .heading-bigger {
+    font-size: 4.375rem;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.shopoffer .offer-box .offer-info .offer-title-1 {
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+}
+
+.shopoffer .offer-box .offer-info .btn-outline-danger {
+    border-color: #fff;
+    color: #fff;
+    background: transparent;
+}
+
+.shopoffer .offer-box .offer-info .btn-outline-danger:hover {
+    background-color: red;
+    border-color: red;
+}
+
+.shopoffer a {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Products page */
+
+.prodbanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(./E-com-img/products/productbanner.webp);
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    gap: 25px;
+    font-size: 25px;
+}
+
+.prodbanner #protban {
+    text-align: end;
+}
+
+.prodbanner #protban h1 {
+    letter-spacing: 2px;
+    color: yellow;
+    font-size: 4rem;
+}
+
+.prodbanner #protban h4 {
+    margin-top: 1rem;
+    margin-right: 5rem;
+    letter-spacing: 5px;
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.prodbanner #protban h4 span {
+    color: #088178;
+}
+
+.prodbanner #protban h5 {
+    margin-right: 5rem;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    color: #d20376;
+}
+
+.products {
+    padding: 5rem;
+}
+
+.headline h2::before {
+    content: '';
+    width: 30%;
+    height: 0.125rem;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.625rem;
+}
+
+.products a {
+    text-decoration: none;
+    color: #000;
+}
+
+.product-list .product-image img {
+    transition: all 500ms ease-in-out;
+}
+
+.product-list .product-image .product-image-secondary {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.product-list .product-image:hover .product-image-secondary {
+    opacity: 1;
+}
+
+.product-list .product-image .sale {
+    background: red;
+    border-radius: 0.313rem;
+    color: #fff;
+    font-size: 0.813rem;
+    letter-spacing: 0.125rem;
+    line-height: 1.563rem;
+    padding: 0.125rem 0.813rem;
+    text-transform: uppercase;
+    position: absolute;
+    left: 1rem;
+    top: 1.188rem;
+    z-index: 99;
+}
+
+.product-list .product-name h3 {
+    font-size: 1.125rem;
+    color: #000;
+    transition: all 0.3s ease 0s;
+}
+
+.product-list .product-name h3:hover {
+    color: red;
+}
+
+.product-list .product-name .amount {
+    color: red;
+}
+
+.product-list .product-name .amount del {
+    color: gray;
+}
+
+.product-name .btnbuy {
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 3px;
+    font-size: large;
+    letter-spacing: 1px;
+    background-color: #088178;
+    transition: all ease-in-out 0.2s;
+
+}
+
+.product-name .btnbuy:hover {
+    background-color: #fc5185;
+    color: #000;
 }
 
 /* Blog page */
@@ -698,6 +947,50 @@ header {
 #blog .blog-details a {
     text-decoration: none;
     list-style: none;
+}
+
+.bannerpay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(./E-com-img/products/slide2.jpg);
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    gap: 25px;
+    font-size: 25px;
+}
+
+.bannerpay #text {
+    text-align: start;
+}
+
+.bannerpay h1 {
+    color: rebeccapurple;
+}
+
+.bannerpay h3 {
+    color: #033879;
+    margin-bottom: 2rem;
+}
+
+.bannerpay button {
+    border: none;
+    background: red;
+    padding: 1vh;
+    color: #fff;
+    border-radius: 1vh;
+    transition: all ease-in-out 0.2s;
+}
+
+.bannerpay button:hover {
+    background-color: transparent;
+    color: #000;
+    border: #000 1px solid;
+
 }
 
 /* About page */
@@ -754,8 +1047,8 @@ header {
     border-radius: 20px;
 }
 
-/* Contact */
 
+/* Contact */
 .contbanner .contban {
     display: flex;
     flex-direction: column;
@@ -848,6 +1141,8 @@ header {
     transition: all ease 0.5s;
 
 }
+
+/* Responsive Website Design page */
 
 @media (max-width:799px) {
     #navber {
@@ -986,6 +1281,12 @@ header {
 
     #about-head img {
         width: 100%;
+    }
+
+    /* Products pages */
+    .prodbanner #protban h1 {
+        margin-top: 1rem;
+        margin-right: 5rem;
     }
 
     /* Contact Page */
