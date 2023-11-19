@@ -134,11 +134,14 @@ header {
 
 #header #navber li {
     position: relative;
+    top: 0.5rem;
 }
 
 #header #navber a {
     text-decoration: none;
     list-style: none;
+    letter-spacing: 1px;
+    font-size: large;
     color: #000;
     transition: 0.3s ease;
 }
