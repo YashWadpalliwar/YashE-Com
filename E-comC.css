@@ -1308,14 +1308,13 @@ header {
     }
 
     #heros .herotexts h4,
-    h2,
-    h1,
-    p {
+    #heros .herotexts h2,
+    #heros .herotexts h1,
+    #heros .herotexts p {
         position: relative;
         bottom: 3rem;
         right: 3rem;
         font-size: 2rem;
-        color: #000;
     }
 
     #heros .herotexts button {
