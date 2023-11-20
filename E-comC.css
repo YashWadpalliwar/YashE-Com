@@ -1312,15 +1312,16 @@ header {
     #heros .herotexts h1,
     #heros .herotexts p {
         position: relative;
-        bottom: 3rem;
+        top: 4rem;
         right: 3rem;
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     #heros .herotexts button {
         position: relative;
-        bottom: 3rem;
+        top: 4rem;
         right: 5rem;
+        font-size: 1rem;
     }
 
     .heros2 .par .c1 {
