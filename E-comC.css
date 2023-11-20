@@ -86,7 +86,7 @@ p {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--secondary-color);
+    background: var(--primary-color);
 }
 
 @media(max-width:991px) {
@@ -170,43 +170,15 @@ header {
 
 /* heros section */
 
-#heros {
-    background-image: url(./E-com-img/hero4.png);
-    background-repeat: no-repeat;
-    height: 90vh;
-    width: 100%;
-    background-size: cover;
-    background-position: top 25% right 0;
-    padding: 0 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-
+.heros_wrapper .heros-bta button {
+    background-color: #088178;
+    color: #fff;
 }
 
-#heros h4 {
-    padding: 0 0 1rem 0;
-}
-
-#heros h1 {
-    color: #088178;
-}
-
-#heros button {
-    background-image: url(./E-com-img/button.png);
-    background-repeat: no-repeat;
+.heros_wrapper .heros-bta button:hover {
     background-color: transparent;
     color: #088178;
-    border: 0;
-    padding: 14px 80px 14px 65px;
-    font-size: large;
-}
-
-#heros button:hover {
-    color: #033879;
-    transition: 0.3s ease;
-
+    border: #000 solid 2px;
 }
 
 /* feacher section */
@@ -653,6 +625,47 @@ header {
 
 
 /* Shop page */
+
+
+#heros {
+    background-image: url(./E-com-img/hero4.png);
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+#heros h4 {
+    padding: 0 0 1rem 0;
+}
+
+#heros h1 {
+    color: #088178;
+}
+
+#heros button {
+    background-image: url(./E-com-img/button.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    font-size: large;
+}
+
+#heros button:hover {
+    color: #033879;
+    transition: 0.3s ease;
+
+}
+
 .shopbanner .shopban {
     display: flex;
     flex-direction: column;
@@ -770,50 +783,49 @@ header {
 }
 
 /* Products page */
+.main img {
+    position: relative;
+    top: 14px;
+    width: 330px;
+}
 
-.prodbanner {
+.main {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-image: url(./E-com-img/products/productbanner.webp);
-    width: 100%;
-    height: 50vh;
-    background-size: cover;
-    background-position: center;
-    gap: 25px;
-    font-size: 25px;
+    justify-content: space-around;
+    margin-top: 0px;
+    background-color: rgb(248, 166, 128);
+    padding: 15px;
 }
 
-.prodbanner #protban {
-    text-align: end;
+.mainText {
+    margin-top: 150px;
 }
 
-.prodbanner #protban h1 {
-    letter-spacing: 2px;
-    color: yellow;
-    font-size: 4rem;
+.mainText h1 {
+    font-size: 70px;
 }
 
-.prodbanner #protban h4 {
-    margin-top: 1rem;
-    margin-right: 5rem;
-    letter-spacing: 5px;
-    font-size: 2.5rem;
-    color: #000;
+.mainText p {
+    margin-top: 22px;
 }
 
-.prodbanner #protban h4 span {
-    color: #088178;
+.mainText button {
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin-top: 22px;
 }
 
-.prodbanner #protban h5 {
-    margin-right: 5rem;
-    margin-top: 1rem;
-    font-size: 2.5rem;
-    color: #d20376;
+.mainText button:hover {
+    border: 3px solid black;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 600;
 }
+
 
 .products {
     padding: 5rem;
@@ -901,6 +913,45 @@ header {
 .product-name .btnbuy:hover {
     background-color: #fc5185;
     color: #000;
+}
+
+.feacherp {
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.feacherp .pro {
+    width: 16%;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    background-color: #fff;
+    transition: 0.2 ease;
+}
+
+.feacherp .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.feacherp .pro .des h5 {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 20px;
+}
+
+.feacherp .pro .des h5:hover {
+    color: red;
+}
+
+.feacherp .pro-conp {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
 }
 
 /* Blog page */
