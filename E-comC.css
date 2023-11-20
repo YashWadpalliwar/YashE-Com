@@ -1282,6 +1282,19 @@ header {
 
     }
 
+    .prodbanner .main img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .prodbanner .main {
+        display: block;
+        align-items: center;
+
+    }
+
     #Newsletters .form {
         width: 100%;
     }
@@ -1305,7 +1318,17 @@ header {
 
     .feacher2 .pro-con .pro {
         width: 100%;
-        background-color: #d20376;
+    }
+
+    .feacherp .pro-conp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feacherp .pro-conp .pro {
+        width: 50%;
     }
 
     #blog {
