@@ -1307,6 +1307,23 @@ header {
         flex-wrap: wrap;
     }
 
+    #heros .herotexts h4,
+    h2,
+    h1,
+    p {
+        position: relative;
+        bottom: 3rem;
+        right: 3rem;
+        font-size: 2rem;
+        color: #000;
+    }
+
+    #heros .herotexts button {
+        position: relative;
+        bottom: 3rem;
+        right: 5rem;
+    }
+
     .heros2 .par .c1 {
         width: 100%;
     }
