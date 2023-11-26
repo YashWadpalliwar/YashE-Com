@@ -53,7 +53,7 @@
         <div id="login-btn" class="ri-user-line"></div>
       </div>
     </section>
-    
+
   </header>
   <!-- closer btn  -->
   <div id="closer" class="ri-close-line"></div>
@@ -117,53 +117,145 @@
     <h3 class="total">total : <span>$560.00</span></h3>
     <a href="#" class="btn">checkout cart</a>
   </div>
-
   <!-- shopping cart end  -->
 
 
   <!-- login form start  -->
-
+  <div class="login-form">
+    <form action="#">
+      <h3>login form</h3>
+      <input type="email" placeholder="enter your email" class="box">
+      <input type="password" placeholder="enter your password" class="box">
+      <div class="remember">
+        <input type="checkbox" name="" id="remember-me">
+        <label for="remember-me">remember me</label>
+      </div>
+      <input type="submit" value="login now" class="btn">
+      <p>Forget password? <a href="#">click here</a> </p>
+      <p>Don't have an account? <a href="#">create now</a></p>
+    </form>
+  </div>
   <!-- login form end  -->
 
 
   <!-- home section starts  -->
+  <div class="home">
+    <div class="slides-container container p-5">
 
+      <div class="slide active">
+        <div class="content">
+          <span>new arrivals</span>
+          <h3>flexible chair</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa amet delectus laborum neque sit quo
+            reiciendis, perspiciatis perferendis quis </p>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+        <div class="image">
+          <img src="Image/home-img-1.png" alt="">
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="content">
+          <span>new arrivals</span>
+          <h3>flexible chair</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa amet delectus laborum neque sit quo
+            reiciendis, perspiciatis perferendis quis </p>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+        <div class="image">
+          <img src="Image/home-img-2.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div id="slide-next" onclick="next()" class="ri-arrow-right-line"></div>
+    <div id="slide-prev" onclick="prev()" class="ri-arrow-left-line"></div>
+  </div>
   <!-- home section ends -->
 
-
   <!-- banner section starts  -->
+  <div class="banner-container m-2">
+    <div class="banner ">
+      <img src="Image/banner-1.jpg" alt="">
+      <div class="content">
+        <span>limited offer</span>
+        <h3>upto 50% off</h3>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+    </div>
 
+    <div class="banner">
+      <img src="Image/banner-2.jpg" alt="">
+      <div class="content">
+        <span>limited offer</span>
+        <h3>upto 50% off</h3>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+    </div>
+
+    <div class="banner">
+      <img src="Image/banner-3.jpg" alt="">
+      <div class="content">
+        <span>limited offer</span>
+        <h3>upto 50% off</h3>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+    </div>
+  </div>
   <!-- banner section ends -->
 
 
-
-
-
-
-
   <!-- footer section start  -->
-
   <footer>
     <!-- place footer here -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Quich links</h3>
+          <a href="home.html"> <i class="ri-arrow-right-line"></i> Home</a>
+          <a href="shopf.html"> <i class="ri-arrow-right-line"></i> Shop</a>
+          <a href="aboutf.html"> <i class="ri-arrow-right-line"></i> About</a>
+          <a href="team.html"> <i class="ri-arrow-right-line"></i> Team</a>
+          <a href="blogf.html"> <i class="ri-arrow-right-line"></i> Blog</a>
+          <a href="contactf.html"> <i class="ri-arrow-right-line"></i> Contact</a>
+        </div>
 
+        <div class="box">
+          <h3>Extra links</h3>
+          <a href="#"> <i class="ri-arrow-right-line"></i> my order</a>
+          <a href="#"> <i class="ri-arrow-right-line"></i> my wishlist</a>
+          <a href="#"> <i class="ri-arrow-right-line"></i> my account</a>
+          <a href="#"> <i class="ri-arrow-right-line"></i> my favorite</a>
+          <a href="#"> <i class="ri-arrow-right-line"></i> terms of user</a>
+        </div>
+
+        <div class="box">
+          <h3>Extra links</h3>
+          <a href="#"> <i class="ri-facebook-fill"></i> Facebook</a>
+          <a href="#"> <i class="ri-twitch-fill"></i> Twitter</a>
+          <a href="#"> <i class="ri-instagram-fill"></i> Instagram </a>
+          <a href="#"> <i class="ri-linkedin-fill"></i> Linkedin </a>
+          <a href="#"> <i class="ri-pinterest-fill"></i> pinterest</a>
+        </div>
+
+        <div class="box">
+          <h3>newsletter</h3>
+          <p>Subscribe for latest updates</p>
+          <form action="#">
+            <input type="email" name="" placeholder="enter your email" id="">
+            <input type="submit" value="Subscribe" class="btn">
+          </form>
+        </div>
+
+      </div>
+    </section>
   </footer>
-
   <!-- footer section end  -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <section class="credit">
+    <h4><i class="ri-copyright-line "></i> Yash E-Com - HTML CSS and Bootstrap
+      ECOMMERCE WEBSITE ✅ All Right Reserved</h4>
+  </section>
 
 
 
