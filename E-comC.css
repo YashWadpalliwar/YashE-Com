@@ -625,15 +625,14 @@ header {
 
 
 /* Shop page */
-
-
 #heros {
-    background-image: url(./E-com-img/hero4.png);
+    background: url(./E-com-img/hero4.png) fixed center center;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 90vh;
     width: 100%;
     background-size: cover;
-    background-position: top 25% right 0;
+    background-position: top 0% right 0;
     padding: 0 80px;
     display: flex;
     flex-direction: column;
@@ -783,49 +782,75 @@ header {
 }
 
 /* Products page */
-.main img {
-    position: relative;
-    top: 14px;
-    width: 330px;
+.main-home {
+    width: 100%;
+    height: 90vh;
+    background-image: url(./E-com-img/imagep/image/banner-3.png);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+
 }
 
-.main {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 0px;
-    background-color: rgb(248, 166, 128);
-    padding: 15px;
+.main-text h5 {
+    color: red;
 }
 
-.mainText {
-    margin-top: 150px;
+.main-text p {
+    color: #088178;
 }
 
-.mainText h1 {
-    font-size: 70px;
+.main-text a {
+    text-decoration: none;
 }
 
-.mainText p {
-    margin-top: 22px;
-}
-
-.mainText button {
-    width: 140px;
-    height: 40px;
-    background-color: black;
-    color: white;
-    font-size: 20px;
-    border: none;
-    margin-top: 22px;
-}
-
-.mainText button:hover {
-    border: 3px solid black;
+.main-text .main-btn {
+    border: #000 solid 2px;
+    border-radius: 1rem;
     background-color: transparent;
-    cursor: pointer;
-    font-weight: 600;
+    color: #088178;
+    font-size: 1.5rem;
+    margin-top: 50rem;
+    padding: 0.5rem;
+    transition: all .42s ease;
 }
 
+.main-text .main-btn:hover {
+    background-color: #d20376;
+    color: #fff;
+    border: none;
+}
+
+.down-arrow {
+    position: absolute;
+    top: 85%;
+    right: 11%;
+}
+
+.down-arrow a {
+    text-decoration: none;
+}
+
+.down i {
+    font-size: 30px;
+    color: #2c2c2c;
+    border: 2px solid #2c2c2c;
+    border-radius: 50px;
+    padding: 10px 10px;
+}
+
+.down i:hover {
+    background-color: #2c2c2c;
+    color: #fff;
+    transition: all .42s ease;
+}
+
+.martext {
+    position: relative;
+    bottom: 2.2rem;
+}
 
 .products {
     padding: 5rem;
@@ -1245,10 +1270,28 @@ header {
         font-size: 25px;
     }
 
+    .main-text h1 {
+        font-size: 50px;
+        transition: .4s;
+    }
+
+    #header .Logoh {
+        position: relative;
+        right: 2rem;
+    }
+
+    #header .Logoh a h3 {
+        font-size: 1.3rem;
+    }
+
     #heros {
         height: 70vh;
         padding: 0 80px;
         background-position: top 30% right 30%;
+    }
+
+    .heros-bta {
+        margin-left: 4rem;
     }
 
     .banner .ban {
@@ -1313,15 +1356,12 @@ header {
     #heros .herotexts p {
         position: relative;
         top: 4rem;
-        right: 3rem;
+        right: 5rem;
         font-size: 1rem;
     }
 
     #heros .herotexts button {
-        position: relative;
-        top: 4rem;
-        right: 5rem;
-        font-size: 1rem;
+        display: none;
     }
 
     .heros2 .par .c1 {
@@ -1378,10 +1418,7 @@ header {
     }
 
     /* Products pages */
-    .prodbanner #protban h1 {
-        margin-top: 1rem;
-        margin-right: 5rem;
-    }
+
 
     /* Contact Page */
 
