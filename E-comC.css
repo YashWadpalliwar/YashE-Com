@@ -250,11 +250,13 @@ header {
     margin: 15px 0;
     background-color: #d20376;
     transition: 0.2 ease;
+
 }
 
-.pro-con .pro:hover {
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
-
+.pro-con .pro img:hover{
+    overflow: hidden;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .pro-con .pro img {
