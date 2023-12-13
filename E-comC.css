@@ -82,11 +82,11 @@ p {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--bg-dark);
+    background: #e3e6f3;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
+    background: var(--bg-dark);
 }
 
 @media(max-width:991px) {
@@ -170,15 +170,21 @@ header {
 
 /* heros section */
 
-.heros_wrapper .heros-bta button {
+.heros_wrapper .heros-bta a {
     background-color: #088178;
+    text-decoration: none;
     color: #fff;
+    border-radius: 1rem;
+    padding: 0.9rem;
+    letter-spacing: 0.1rem;
+    transition: 0.3s ease;
+
 }
 
-.heros_wrapper .heros-bta button:hover {
+.heros_wrapper .heros-bta a:hover {
     background-color: transparent;
-    color: #088178;
     border: #000 solid 2px;
+    color: #088178;
 }
 
 /* feacher section */
